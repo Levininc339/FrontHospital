@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Historia Clínica</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+
+<body class="bg-light">
+  <div class="container">
+    <div class="row justify-content-center align-items-center vh-100">
+      <div class="col-md-10 bg-white p-5 shadow rounded">
+        <div class="text-center mb-4">
+          <h1 class="h4">Historia Clínica</h1>
+          <p>Por favor completa o actualiza tu información médica.</p>
+        </div>
+
+        <form>
+          <div class="row mb-3">
+            <div class="col-md-6">
+              <label for="firstName" class="form-label">Nombres</label>
+              <input type="text" class="form-control" id="firstName" placeholder="Ingresa tus nombres" required>
+            </div>
+            <div class="col-md-6">
+              <label for="lastName" class="form-label">Apellidos</label>
+              <input type="text" class="form-control" id="lastName" placeholder="Ingresa tus apellidos" required>
+            </div>
+          </div>
+
+          <div class="row mb-3">
+            <div class="col-md-4">
+              <label for="age" class="form-label">Edad</label>
+              <input type="number" class="form-control" id="age" placeholder="Edad" required>
+            </div>
+            <div class="col-md-8">
+              <label for="doctor" class="form-label">Médico</label>
+              <input type="text" class="form-control" id="doctor" placeholder="Nombre del médico tratante" required>
+            </div>
+          </div>
+
+          <div class="mb-3">
+            <label for="illness" class="form-label">Enfermedad</label>
+            <input type="text" class="form-control" id="illness" placeholder="Diagnóstico o enfermedad" required>
+          </div>
+
+          <div class="row mb-3">
+            <div class="col-md-6">
+              <label for="medications" class="form-label">Medicamentos</label>
+              <textarea class="form-control" id="medications" placeholder="Medicamentos actuales" rows="2" required></textarea>
+            </div>
+            <div class="col-md-6">
+              <label for="pharmacy" class="form-label">Farmacéutica</label>
+              <input type="text" class="form-control" id="pharmacy" placeholder="Farmacia proveedora" required>
+            </div>
+          </div>
+
+          <div class="mb-3">
+            <label for="recommendations" class="form-label">Recomendaciones</label>
+            <textarea class="form-control" id="recommendations" placeholder="Recomendaciones del médico" rows="3"></textarea>
+          </div>
+
+          <div class="row mb-3">
+            <div class="col-md-6">
+              <label for="healthCenter" class="form-label">Centro de Atención</label>
+              <input type="text" class="form-control" id="healthCenter" placeholder="Hospital o clínica" required>
+            </div>
+            <div class="col-md-6">
+              <label for="creationDate" class="form-label">Fecha de Creación de la Historia</label>
+              <input type="date" class="form-control" id="creationDate" required>
+            </div>
+          </div>
+
+          <button type="submit" class="btn btn-primary w-100">Guardar Historia Clínica</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+
+</body>
+
+</html>
